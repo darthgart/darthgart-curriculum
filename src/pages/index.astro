@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import image_darthgart from '../assets/image_darthgart.jpg';
+import Aside from '../components/Aside.astro';
+import Content from '../components/Content.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <main class="w-full mx-auto min-w-0 max-w-full">
+    <section class="w-full mx-auto max-w-7xl">
+      <header class="relative z-10 grid md:grid-cols-12 bg-indigo-100 rounded-t-sm">
+        <section class="top-0 md:relative flex md:justify-end md:col-span-4 overflow-hidden bg-cover">
+          <img src={image_darthgart.src} alt="Edgar Sanchez" class="mx-auto " />
+        </section>
+        <section class="sticky top-0 md:col-span-8 bg-[var(--color-light)]">
+          <div class="w-full h-full flex items-center justify-between p-10 sm:p-8">
+            <div class="flex-1">
+              <h1 class="text-5xl leading-[120%] uppercase">Edgar <br/> Sánchez Giménez</h1>
+              <h2 class="text-4xl leading-[120%] tracking-[3px]">Full Stack Developer</h2>
+            </div>
+          </div>
+        </section>
+      </header>
+      <article class="grid grid-cols-1 md:grid-cols-12">
+        <Aside />
+        <Content />
+      </article>
+    </section>
+  </main>
 </Layout>

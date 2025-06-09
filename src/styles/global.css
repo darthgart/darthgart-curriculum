@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-darkest: #212A31;   /* Muy oscuro, ideal para fondo base */
+  --color-dark: #2E3944;       /* Oscuro intermedio, para encabezados o fondos */
+  --color-primary: #124E66;    /* Azul petróleo, perfecto como color principal */
+  --color-secondary: #748D92;  /* Gris azulado suave, ideal para textos secundarios */
+  --color-light: #D3D9D4;      /* Color claro, para fondos o detalles */
+}
+
+.text-wrapper p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: var(--color-darkest)
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: var(--color-primary)
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  color: var(--color-secondary)
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  pointer-events: auto;
+  opacity: 1;
+}

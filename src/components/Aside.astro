@@ -1,0 +1,68 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+---
+
+  <aside class="md:col-span-4 bg-[var(--color-darkest)] text-white p-8 space-y-8">
+      <div>
+        <h3 class="text-lg border-b border-gray-200 pb-1 mb-2">Contacto</h3>
+        <ul class="text-sm space-y-2">
+          <li class="flex items-center gap-2">
+            <!-- Correo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" d="M21 12a9 9 0 1 0-6.67 8.693"/><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M16 9v4.5a2.5 2.5 0 0 0 2.5 2.5v0a2.5 2.5 0 0 0 2.5-2.5V12"/></g>
+            </svg>
+            <a href="mailto:darthgart.dev@gmail.com">darthgart.dev@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <!-- Teléfono -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.77 14.77 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5"/>
+          </svg>
+            <a href="tel:617090627">617 090 627</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <!-- Ubicación -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12.5 12.473a4.5 4.5 0 1 0-1 0V19a.5.5 0 0 0 1 0zM8.5 8a3.5 3.5 0 0 1 4-3.465a2 2 0 0 0 2.616 1.869A3.5 3.5 0 1 1 8.5 8m5.948-2.501a3.5 3.5 0 0 0-.877-.627a1 1 0 0 0 .877.627"/><path fill="currentColor" d="M9.995 15.931a.5.5 0 0 1-.426.564a17.4 17.4 0 0 0-7.29 2.78a.5.5 0 0 1-.557-.832a18.4 18.4 0 0 1 7.71-2.938a.5.5 0 0 1 .563.426m4.01 0a.5.5 0 0 1 .564-.426a18.4 18.4 0 0 1 7.71 2.938a.5.5 0 1 1-.557.831a17.4 17.4 0 0 0-7.29-2.779a.5.5 0 0 1-.427-.564"/>
+            </svg>
+            Tarragona
+          </li>
+          <li class="flex items-center gap-2">
+            <!-- Darthgart.dev -->
+            <svg width="20" height="20" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_16)">
+              <rect x="33" y="30" width="103" height="210" fill="white"/>
+              <circle cx="138" cy="135" r="105" fill="white"/>
+              <path d="M146.67 251.62C132.27 251.62 118.95 249.28 106.71 244.6C94.65 239.74 84.12 232.99 75.12 224.35C66.3 215.71 59.37 205.54 54.33 193.84C49.47 182.14 47.04 169.36 47.04 155.5C47.04 141.64 49.47 128.86 54.33 117.16C59.37 105.46 66.39 95.29 75.39 86.65C84.39 78.01 94.92 71.35 106.98 66.67C119.22 61.81 132.54 59.38 146.94 59.38C161.34 59.38 174.48 61.63 186.36 66.13C198.42 70.63 208.68 77.47 217.14 86.65L204.72 99.34C196.8 91.42 188.07 85.75 178.53 82.33C168.99 78.91 158.73 77.2 147.75 77.2C136.05 77.2 125.25 79.18 115.35 83.14C105.63 86.92 97.08 92.41 89.7 99.61C82.5 106.63 76.83 114.91 72.69 124.45C68.73 133.81 66.75 144.16 66.75 155.5C66.75 166.66 68.73 177.01 72.69 186.55C76.83 196.09 82.5 204.46 89.7 211.66C97.08 218.68 105.63 224.17 115.35 228.13C125.25 231.91 135.96 233.8 147.48 233.8C158.28 233.8 168.45 232.18 177.99 228.94C187.71 225.7 196.62 220.21 204.72 212.47L216.06 227.59C207.06 235.51 196.53 241.54 184.47 245.68C172.41 249.64 159.81 251.62 146.67 251.62ZM196.89 225.16V155.5H216.06V227.59L196.89 225.16Z" fill="#0C0A09"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1_16">
+              <rect width="270" height="270" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <a href="https://darthgart.dev" class="hover:underline" target="_blank">darthgart.dev</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div>
+        <h3 class="text-lg font-semibold border-b border-gray-200 pb-1 mb-2">Sobre mí</h3>
+        <p class="text-sm text-gray-600">Soy Edgar, desarrollador Full Stack desde el 2024. Me considero una persona activa, dinámica y con muchas ganas de aprender y crecer profesionalmente.</p>
+      </div> -->
+
+      <div>
+        <h3 class="text-lg border-b border-gray-200 pb-1 mb-2">Idiomas</h3>
+        <ul class="text-sm list-disc list-inside">
+          <li>Español: Nativo</li>
+          <li>Catalán: Nativo</li>
+          <li>Inglés: Medio</li>
+          <li>Francés: Básico</li>
+        </ul>
+      </div>
+  </aside>
+<!-- 
+  <li class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436c.55.096.756-.233.756-.522c0-.262-.013-1.128-.013-2.049c-2.764.509-3.479-.674-3.699-1.292c-.124-.317-.66-1.293-1.127-1.554c-.385-.207-.936-.715-.014-.729c.866-.014 1.485.797 1.691 1.128c.99 1.663 2.571 1.196 3.204.907c.096-.715.385-1.196.701-1.471c-2.448-.275-5.005-1.224-5.005-5.432c0-1.196.426-2.186 1.128-2.956c-.111-.275-.496-1.402.11-2.915c0 0 .921-.288 3.024 1.128a10.2 10.2 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371c2.104-1.43 3.025-1.128 3.025-1.128c.605 1.513.221 2.64.111 2.915c.701.77 1.127 1.747 1.127 2.956c0 4.222-2.571 5.157-5.019 5.432c.399.344.743 1.004.743 2.035c0 1.471-.014 2.654-.014 3.025c0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11"/>
+        </svg>
+        <a href="https://github.com/darthgart" class="hover:underline" target="_blank">github.com/darthgart</a>
+      </li> -->

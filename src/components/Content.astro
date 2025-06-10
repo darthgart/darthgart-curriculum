@@ -1,43 +1,96 @@
+---
+---
+
 <section class="md:col-span-8 bg-white p-8 space-y-8">
+  <section>
+    <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Experiencia</h3>
+    <div class="text-sm text-gray-700 space-y-4">
       <div>
-        <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Experiencia</h3>
-        <div class="text-sm text-gray-700 space-y-4">
-          <div>
-            <p class="font-semibold">Full Stack Developer - Grup Oliva Motor <span class="text-gray-500">(Marzo 2024 - Actual)</span></p>
-            <p class="ml-2">Desarrollador Full Stack en Grup Oliva Motor.</p>
-          </div>
-          <div>
-            <p class="font-semibold">Becario - Grup Oliva Motor <span class="text-gray-500">(Junio 2023 - Marzo 2024)</span></p>
-            <p class="ml-2">Estudiante en Prácticas DUAL - CFGS DAM.</p>
-          </div>
+      <div class="group my-2">
+        <div class="flex justify-between items-center cursor-pointer toggle-btn">
+          <p class="flex items-center gap-2 ml-1 text-[var(--color-primary)]">
+           <span class="bg-[var(--color-primary)] rounded-full px-3 mr-1 text-white text-center">
+            2024 - Actual
+          </span> 
+          Full Stack Developer - Grup Oliva Motor 
+          </p>
+          <svg class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 10l5 5 5-5" stroke-width="2" />
+          </svg>
         </div>
+        <p class="m-2 mt-1 toggle-description hidden text-gray-600 transition-all duration-300">
+          Como desarrollador Full Stack en Grup Oliva Motor, participo en el diseño, desarrollo y 
+          mantenimiento de aplicaciones web internas orientadas a la mejora de procesos y eficiencia 
+          operativa en el sector automovilístico.
+        </p>
       </div>
+      <div class="group my-2">
+        <div class="flex justify-between items-center cursor-pointer toggle-btn">
+          <p class="flex items-center gap-2 ml-1 text-[var(--color-primary)]">
+            <span class="bg-[var(--color-primary)] rounded-full px-4 mr-1 text-white text-center">
+              2023 - 2024
+            </span> 
+            Becario - Grup Oliva Motor 
+          </p>
+          <svg class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 10l5 5 5-5" stroke-width="2" />
+          </svg>
+        </div>
+        <p class="m-2 mt-1 toggle-description hidden text-gray-600 transition-all duration-300">
+          Estudiante en Prácticas DUAL - CFGS DAM.
+        </p>
+      </div>
+    </div>
+  </section>
 
-      <div>
-        <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Estudios</h3>
-        <ul class="text-sm text-gray-700 space-y-1">
-          <li><span class="font-semibold">Actual:</span> CEFP Inteligencia Artificial & Big Data - IOC</li>
-          <li><span class="font-semibold">2023:</span> CFGS DAM - Instituto Vidal i Barraquer, Tarragona</li>
-          <li><span class="font-semibold">2018:</span> Bachillerato - Instituto Comte de Rius, Tarragona</li>
-        </ul>
-      </div>
+  <section>
+    <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Estudios</h3>
+    <ul class="text-sm text-gray-700 space-y-2 my-2 ml-1 font-semibold">
+      <li >
+        <!-- <span class="bg-[var(--color-primary)] rounded-full px-2 mr-2 text-white">Actual</span>  -->
+        CEFP Inteligencia Artificial & Big Data - IOC
+      </li>
+      <li>
+        <!-- <span class="bg-[var(--color-primary)] rounded-full px-2 mr-4 text-white">2024</span>  -->
+        CFGS DAM - Instituto Vidal i Barraquer, Tarragona
+      </li>
+      <li>
+        <!-- <span class="bg-[var(--color-primary)] rounded-full px-2 mr-4 text-white">2018</span>  -->
+        Bachillerato - Instituto Comte de Rius, Tarragona
+      </li>
+    </ul>
+  </section>
 
-      <div>
-        <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Habilidades</h3>
-        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-gray-700">
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>Typescript</li>
-          <li>Python</li>
-          <li>C#</li>
-          <li>NodeJS</li>
-          <li>React</li>
-          <li>SQL</li>
-          <li>MongoDB</li>
-          <li>Git</li>
-          <li>Dynamics</li>
-          <li>Docker</li>
-          <li>NextJS</li>
-        </ul>
-      </div>
-    </section>
+  <section>
+    <h3 class="text-xl border-b border-gray-300 pb-1 mb-2">Habilidades</h3>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-gray-700 ml-1">
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Typescript</li>
+      <li>Python</li>
+      <li>C#</li>
+      <li>NodeJS</li>
+      <li>React</li>
+      <li>SQL</li>
+      <li>MongoDB</li>
+      <li>Git</li>
+      <li>Dynamics</li>
+      <li>Docker</li>
+      <li>NextJS</li>
+    </ul>
+  </section>
+</section>
+
+<script type="module">
+  const items = document.querySelectorAll('.group');
+
+  items.forEach((item) => {
+    const toggle = item.querySelector('.toggle-btn');
+    const content = item.querySelector('.toggle-description');
+
+    toggle?.addEventListener('click', () => {
+      item.classList.toggle('open');
+      content.classList.toggle('hidden');
+    });
+  });
+</script>

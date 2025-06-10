@@ -2,12 +2,9 @@
 import { SITE_TITLE } from '../consts';
 ---
 
-<header id="navbar" class="fixed bottom-3 sm:top-0 w-full z-50 px-20 sm:px-10">
+<header id="navbar" class="navbar">
   <nav 
-    class="max-w-4xl mx-auto bg-[var(--color-primary)] h-14 
-      shadow-[0_10px_30px_rgba(0,0,0,0.3)] rounded-full
-      px-8 m-3 flex items-center justify-between
-      sm:mt-4 sm:px-4 sm:px-10 sm:bg-[var(--color-darkest)]">
+    class="nav-content">
     <h1 class="text-lg sm:text-xl font-semibold text-white">
       <a href="/">
         <svg width="35" height="35" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,34 +21,43 @@ import { SITE_TITLE } from '../consts';
           </svg>
         </a>
     </h1>
+
+    <div class="flex gap-4">
+     <a></a>
   </nav>
 </header>
 
 <script>
-  let lastScroll = 0;
   const header = document.getElementById('navbar');
+  let lastScroll = 0;
 
-  if (header) {
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      const isMobile = window.innerWidth < 640;
+  const updateNavbarPosition = () => {
+    if (!header) return;
+    const isMobile = window.innerWidth < 640;
+    header.classList.remove('navbar-top', 'navbar-bottom');
+    header.classList.add(isMobile ? 'navbar-bottom' : 'navbar-top');
+  };
 
-      if (currentScroll > lastScroll) {
-        if (isMobile) {
-          header.style.transform = 'translateY(100%)'; 
-        } else {
-          header.style.transform = 'translateY(-100%)';
-        }
-      } else {
-        header.style.transform = 'translateY(0)';
-      }
+  updateNavbarPosition();
+  window.addEventListener('resize', updateNavbarPosition);
 
-      lastScroll = currentScroll <= 0 ? 0 : currentScroll;
-    });
+  window.addEventListener('scroll', () => {
+    if (!header) return;
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const isMobile = window.innerWidth < 640;
+    
+    const goingDown = currentScroll > lastScroll;
+    const goingUp = currentScroll < lastScroll || currentScroll <= 0;
 
-    // Animación suave
-    header.style.transition = 'transform 0.3s ease-in-out';
-  }
+    if (goingDown) {
+      header.classList.remove('navbar-hidden', 'navbar-hidden-bottom');
+      header.classList.add(isMobile ? 'navbar-hidden-bottom' : 'navbar-hidden');
+    } else if (goingUp) {
+      header.classList.remove('navbar-hidden', 'navbar-hidden-bottom');
+    }
+
+    lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+  });
 </script>
 
     

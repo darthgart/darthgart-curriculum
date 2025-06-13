@@ -1,26 +1,23 @@
 ---
-import Header from '../components/Header.astro';
-import './src/styles/global.css';
+import Header from "../components/Header.astro";
+import "./src/styles/global.css";
 ---
 
 <!doctype html>
 <html lang="es-ES">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>DARTHGART.DEV - Currículum</title>
-		<Header />
-	</head>
-	<body class="w-full h-full bg-[var(--color-secondary)] font-sans">
-		<div class="flex items-center justify-center min-h-screen box-border m-5">
-			<main class="bg-white w-full max-w-3xl rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.5)] box-border">
-				<slot />
-			</main>
-		</div>
-	</body>
-	<footer>
-
-	</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>DARTHGART.DEV - Currículum</title>
+    <Header />
+  </head>
+  <body class="w-full h-full bg-[var(--color-secondary)] sm:pt-15 font-sans">
+    <div class="flex items-center justify-center min-h-screen box-border m-5">
+      <main class="bg-white w-full max-w-3xl rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.5)] box-border">
+        <slot />
+      </main>
+    </div>
+  </body><footer></footer>
 </html>

@@ -9,11 +9,44 @@
 }
 
 :root {
-  --color-darkest: #212a31; /* Muy oscuro, ideal para fondo base */
-  --color-dark: #2e3944; /* Oscuro intermedio, para encabezados o fondos */
-  --color-primary: #124e66; /* Azul petróleo, perfecto como color principal */
-  --color-secondary: #748d92; /* Gris azulado suave, ideal para textos secundarios */
-  --color-light: #d3d9d4; /* Color claro, para fondos o detalles */
+  --color-darkest: #212a31;
+  --color-dark: #2e3944;
+  --color-primary: #124e66;
+  --color-secondary: #748d92;
+  --color-light: #d3d9d4;
+  --color-white: #ffffff;
+  /* Accent */
+  --color-accent: #ff6f61;
+  --color-accent-light: #ff9f8c;
+  --color-accent-dark: #c44b3f;
+  --color-accent-darker: #a43c33;
+  --color-accent-lightest: #ffe6e0;
+  --color-accent-lighter: #ffb3ab;
+  --color-accent-darkest: #8c2d28;
+  /* Orange */
+  --color-accent-secondary: #ff8c61;
+  --color-accent-secondary-light: #ffb38c;
+  --color-accent-secondary-dark: #c47b4b; 
+  --color-accent-secondary-darker: #a46c3c;
+  --color-accent-secondary-lightest: #ffe0d9;
+  --color-accent-secondary-lighter: #ffb3a3;
+  --color-accent-secondary-darkest: #8c4b2d;
+  /* Green */
+  --color-accent-tertiary: #61ff8c;
+  --color-accent-tertiary-light: #8cffb3;
+  --color-accent-tertiary-dark: #4bc47b;
+  --color-accent-tertiary-darker: #3ca46c;
+  --color-accent-tertiary-lightest: #d9ffe0;
+  --color-accent-tertiary-lighter: #a3ffb3;
+  --color-accent-tertiary-darkest: #2d8c4b;
+  /* Purple */
+  --color-accent-quaternary: #8c61ff;
+  --color-accent-quaternary-light: #b38cff;
+  --color-accent-quaternary-dark: #7b4bc4;
+  --color-accent-quaternary-darker: #6c3ca4;  
+  --color-accent-quaternary-lightest: #e0d9ff;
+  --color-accent-quaternary-lighter: #a3b3ff; 
+  --color-accent-quaternary-darkest: #4b2d8c;
 }
 
 p,
@@ -26,13 +59,13 @@ li {
 h1 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
-  color: var(--color-darkest);
+  color: var(--color-white);
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  color: var(--color-primary);
+  font-weight: normal;
+  color: var(--color-dark);
 }
 
 h3 {

@@ -1,13 +1,14 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
+import { Phone, AtSign, MapPin } from '@lucide/astro';
 ---
 
 <aside class="md:col-span-4 bg-[var(--color-darkest)] text-white p-8 space-y-8">
   <section>
     <div>
-      <h3 class="text-2xl border-b border-white pb-1 mb-2">Sobre mí</h3>
-      <p class="text-sm text-justify tracking-wide">
+      <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">
+        Sobre mí
+      </h3>
+      <p class="text-sm text-justify tracking-wide ">
         Soy Edgar, Desarrollador Full Stack desde el 2024. Me defino como una persona proactiva, dinámica y organizada, con una mentalidad orientada a la mejora continua.
         <!-- <br/>
           Disfruto enfrentando nuevos retos y creciendo junto a equipos que valoran la innovación,
@@ -16,40 +17,21 @@ import background from "../assets/background.svg";
     </div>
   </section>
   <section>
-    <h3 class="text-2xl border-b border-white pb-1 mb-2">Contacto</h3>
+    <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">Contacto</h3>
     <ul class="text-sm space-y-2">
       <li class="flex items-center gap-2">
         <!-- Correo -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-          ><g fill="none" stroke="currentColor" stroke-width="1"
-            ><path stroke-linecap="round" d="M21 12a9 9 0 1 0-6.67 8.693"></path><circle cx="12" cy="12" r="4"></circle><path
-              stroke-linecap="round"
-              d="M16 9v4.5a2.5 2.5 0 0 0 2.5 2.5v0a2.5 2.5 0 0 0 2.5-2.5V12"></path></g
-          >
-        </svg>
+        <AtSign class="w-4 h-4" />
         <a href="mailto:darthgart.dev@gmail.com">darthgart.dev@gmail.com</a>
       </li>
       <li class="flex items-center gap-2">
         <!-- Teléfono -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-          ><path
-            fill="currentColor"
-            d="M19.5 22a1.5 1.5 0 0 0 1.5-1.5V17a1.5 1.5 0 0 0-1.5-1.5c-1.17 0-2.32-.18-3.42-.55a1.51 1.51 0 0 0-1.52.37l-1.44 1.44a14.77 14.77 0 0 1-5.89-5.89l1.43-1.43c.41-.39.56-.97.38-1.53c-.36-1.09-.54-2.24-.54-3.41A1.5 1.5 0 0 0 7 3H3.5A1.5 1.5 0 0 0 2 4.5C2 14.15 9.85 22 19.5 22M3.5 4H7a.5.5 0 0 1 .5.5c0 1.28.2 2.53.59 3.72c.05.14.04.34-.12.5L6 10.68c1.65 3.23 4.07 5.65 7.31 7.32l1.95-1.97c.14-.14.33-.18.51-.13c1.2.4 2.45.6 3.73.6a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5C10.4 21 3 13.6 3 4.5a.5.5 0 0 1 .5-.5"
-          ></path>
-        </svg>
-        <a href="tel:617090627">617 090 627</a>
+        <Phone class="w-4 h-4" />
+        <a href="tel:617090627">+34 617 090 627</a>
       </li>
       <li class="flex items-center gap-2">
         <!-- Ubicación -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-          ><path
-            fill="currentColor"
-            d="M12.5 12.473a4.5 4.5 0 1 0-1 0V19a.5.5 0 0 0 1 0zM8.5 8a3.5 3.5 0 0 1 4-3.465a2 2 0 0 0 2.616 1.869A3.5 3.5 0 1 1 8.5 8m5.948-2.501a3.5 3.5 0 0 0-.877-.627a1 1 0 0 0 .877.627"
-          ></path><path
-            fill="currentColor"
-            d="M9.995 15.931a.5.5 0 0 1-.426.564a17.4 17.4 0 0 0-7.29 2.78a.5.5 0 0 1-.557-.832a18.4 18.4 0 0 1 7.71-2.938a.5.5 0 0 1 .563.426m4.01 0a.5.5 0 0 1 .564-.426a18.4 18.4 0 0 1 7.71 2.938a.5.5 0 1 1-.557.831a17.4 17.4 0 0 0-7.29-2.779a.5.5 0 0 1-.427-.564"
-          ></path>
-        </svg>
+        <MapPin class="w-4 h-4" />
         Tarragona, España
       </li>
       <li class="flex items-center gap-2">
@@ -74,12 +56,12 @@ import background from "../assets/background.svg";
   </section>
 
   <section>
-    <h3 class="text-2xl border-b border-white pb-1 mb-2">Idiomas</h3>
-    <ul class="text-sm list-disc list-inside">
-      <li>Español: Nativo</li>
-      <li>Catalán: Nativo</li>
-      <li>Inglés: Medio</li>
-      <li>Francés: Básico</li>
+    <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">Idiomas</h3>
+    <ul class="text-sm ">
+      <li class="my-2">Español: Nativo</li>
+      <li class="my-2">Catalán: Nativo</li>
+      <li class="my-2">Inglés: Medio</li>
+      <li class="my-2">Francés: Básico</li>
     </ul>
   </section>
 </aside>

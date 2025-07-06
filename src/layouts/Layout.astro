@@ -1,23 +1,52 @@
 ---
 import Header from "../components/Header.astro";
-import "./src/styles/global.css";
+import "../styles/global.css";
+
+const currentUrl = Astro.request.url;
 ---
 
-<!doctype html>
-<html lang="es-ES">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- SEO básico -->
     <title>DARTHGART.DEV - Currículum</title>
-    <Header />
+    <meta name="description" content="Currículum de Edgar Sanchez, desarrollador full stack en Tarragona. Proyectos, formación y experiencia." />
+    <meta name="author" content="Edgar Sanchez" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="DARTHGART.DEV - Currículum" />
+    <meta property="og:description" content="Conoce a Edgar Sanchez, desarrollador full stack en Tarragona." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={currentUrl} />
+    <meta property="og:image" content={`${currentUrl}/og_cv_edgar.png`} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DARTHGART.DEV - Currículum" />
+    <meta name="twitter:description" content="Currículum de Edgar Sanchez, desarrollador web y de software." />
+    <meta name="twitter:image" content={`${currentUrl}/og_cv_edgar.png`} />
+
+    <!-- Accesibilidad -->
+    <meta name="theme-color" content="#748d92" />
+
+    <link rel="canonical" href={currentUrl} />
+
   </head>
   <body class="w-full h-full bg-[var(--color-light)] sm:pt-15 font-sans">
+    <Header />
     <div class="flex items-center justify-center min-h-screen box-border m-5">
       <main class="bg-white w-full max-w-3xl rounded-sm shadow-[0_10px_30px_rgba(0,0,0,0.5)] box-border">
         <slot />
       </main>
     </div>
-  </body><footer></footer>
+    <footer></footer>
+  </body>
 </html>

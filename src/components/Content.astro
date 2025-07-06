@@ -1,41 +1,32 @@
 ---
-import { ChevronUp, BookMarked, Brain, Laptop } from '@lucide/astro';
-
-const work = [
-  "React", "Next.js", "Node.js", "JavaScript", "TypeScript", "Python", "Astro", "Docker", "Git", "MongoDB", "MS Power Apps"
-]
-
+import { ChevronUp, BookMarked, Brain, Laptop } from "@lucide/astro";
+import { gomDev, gomStudent } from "../utils/works";
 ---
 
 <section class="md:col-span-8 bg-white p-8 space-y-10">
-
   <!-- EXPERIENCIA -->
   <section>
-    <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">
-      <Laptop class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 text-[var(--color-secondary)]" />
-      <span class="pl-8"> 
-        EXPERIENCIA
-      </span>
+    <h3 class="text-3xl sm:text-2xl font-extrabold uppercase tracking-wider relative mb-6">
+      <Laptop class="absolute left-0 top-1/2 -translate-y-1/2 w-7 sm:w-6 h-7 sm:h-6 text-[var(--color-secondary)]" />
+      <span class="pl-8"> EXPERIENCIA </span>
     </h3>
 
     <div class="space-y-6 text-sm text-gray-800">
       <!-- Full Stack -->
-       <div class="group my-3">
+      <div class="group my-3">
         <div class="flex justify-between items-center">
           <div>
             <h4 class="text-base font-semibold">Desarrollador Full Stack - Grup Oliva Motor</h4>
             <p class="text-[var(--color-primary)] text-sm my-1">Marzo 2024 - Actualidad</p>
           </div>
-          <ChevronUp class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180 toggle-btn cursor-pointer"/>
+          <ChevronUp class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180 toggle-btn cursor-pointer" />
         </div>
-        <p class=" text-sm text-gray-600 ">
+        <p class="text-sm text-gray-600">
           Como desarrollador Full Stack en Grup Oliva Motor, participo en el diseño, desarrollo y mantenimiento de aplicaciones web internas orientadas a la mejora de procesos y
           eficiencia operativa en el sector automovilístico.
         </p>
         <div class="my-2 toggle-description transition-all duration-300">
-          {work.map((skill) => (
-            <span class="inline-block bg-[var(--color-primary)] text-white text-xs px-2 rounded-full mr-2 mb-2">{skill}</span>
-          ))}
+          {gomDev.map((skill) => <span class="inline-block bg-[var(--color-primary)] text-white text-md sm:text-sm px-3 py-1 rounded-full mr-2 mb-2">{skill}</span>)}
         </div>
       </div>
 
@@ -46,54 +37,51 @@ const work = [
             <h4 class="text-base font-semibold">Becario de Desarrollo - Grup Oliva Motor</h4>
             <p class="text-[var(--color-primary)] text-sm my-1">Junio 2023 - Marzo 2024</p>
           </div>
-          <ChevronUp class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180 toggle-btn cursor-pointer"/>
+          <ChevronUp class="w-5 h-5 transition-transform duration-300 group-[.open]:rotate-180 toggle-btn cursor-pointer" />
         </div>
-        <p class="mb-5 text-sm text-gray-600 toggle-description transition-all duration-300">
+        <p class="text-sm text-gray-600">
           Como estudiante en prácticas, me incorporé al equipo de tecnología y desarrollo durante mi periodo con la Beca Dual, participando en la modernización y optimización de
           herramientas internas.
         </p>
+        <div class="my-2 toggle-description transition-all duration-300">
+          {gomStudent.map((skill) => <span class="inline-block bg-[var(--color-primary)] text-white text-md sm:text-sm px-3 py-1 rounded-full mr-2 mb-2">{skill}</span>)}
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ESTUDIOS -->
   <section>
-    <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">
-      <BookMarked class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 text-[var(--color-secondary)]" />
-      <span class="pl-8"> 
-        ESTUDIOS
-      </span>
+    <h3 class="text-3xl sm:text-2xl font-extrabold uppercase tracking-wider relative mb-6">
+      <BookMarked class="absolute left-0 top-1/2 -translate-y-1/2 w-7 sm:w-6 h-7 sm:h-6 text-[var(--color-secondary)]" />
+      <span class="pl-8"> ESTUDIOS </span>
     </h3>
 
     <div class="space-y-6 text-sm text-gray-800">
-
       <!-- IA & Big Data -->
       <div>
         <h4 class="text-base font-semibold">
           <p class="inline pl-1 py-1 mr-2 text-[var(--color-primary)] font-light">2024</p>
-           CEFP - IA & Big Data
+          CEFP - IA & Big Data
         </h4>
         <p class="text-[var(--color-primary)] ml-13">Institut Obert de Catalunya (IOC)</p>
       </div>
 
       <!-- DAM -->
       <div>
-        <h4 class="text-base font-semibold"> 
+        <h4 class="text-base font-semibold">
           <p class="inline pl-1 py-1 mr-2 text-[var(--color-primary)] font-light">2023</p>
           CFGS - DAM (FP DUAL)
         </h4>
         <p class="text-[var(--color-primary)] ml-13">Instituto Vidal i Barraquer, Tarragona</p>
       </div>
-
     </div>
   </section>
 
   <section>
-    <h3 class="text-2xl font-extrabold uppercase tracking-wider relative mb-6">
-      <Brain class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 text-[var(--color-secondary)]" />
-      <span class="pl-8"> 
-        HABILIDADES
-      </span>
+    <h3 class="text-3xl sm:text-2xl font-extrabold uppercase tracking-wider relative mb-6">
+      <Brain class="absolute left-0 top-1/2 -translate-y-1/2 w-7 sm:w-6 h-7 sm:h-6 text-[var(--color-secondary)]" />
+      <span class="pl-8"> HABILIDADES </span>
     </h3>
     <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-gray-600 ml-1">
       <li>Java</li>

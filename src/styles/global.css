@@ -49,11 +49,32 @@
   --color-accent-quaternary-darkest: #4b2d8c;
 }
 
-p,
-ul,
-li {
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+@media (max-width: 640px) {
+  p,
+  ul,
+  li {
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    font-size: large;
+  }
+}
+@media (max-width: 768px) {
+  p,
+  ul,
+  li {
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    font-size: large;
+  }
+}
+@media (min-width: 1280px) {
+  p,
+  ul,
+  li {
+    font-family: "Montserrat", sans-serif;
+    line-height: 150%;
+    font-size: medium;
+  }
 }
 
 h1 {
